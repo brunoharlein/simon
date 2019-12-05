@@ -1,4 +1,3 @@
-# coding: utf-8
 import os
 import time
 
@@ -37,7 +36,7 @@ class Game():
             # We ask for a number for each number in the sequence
             for i in range(0, len(self.sequence.numbers)):
                 nombre = self.ask_number()
-                os.system('cls||clear')
+                os.system('clear')
                 # if the player fails the loops stops
                 if nombre != self.sequence.numbers[i]:
                     print("Ce n'est pas le bon nombre malheureusement...")
@@ -65,7 +64,7 @@ class Game():
     def transition(self):
         """Function to make a break and clear the screen"""
         time.sleep(3)
-        os.system('cls||clear')
+        os.system('clear')
 
     def play_again(self):
         """Function to ask the player if he wants to play again"""

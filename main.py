@@ -1,5 +1,4 @@
-# coding: utf-8
-from simon_game.game import Game
+brunofrom simon_game.game import Game
 
 if __name__ == '__main__':
     # Start the object representing the game with a player object and a sequence of number
