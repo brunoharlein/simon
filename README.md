@@ -32,6 +32,9 @@ Spécifications fonctionnelles :
 Spécifications techniques :
 - Utiliser au maximum la programmation orientée objet
 
+
+
+
 ## Pour aller plus loin
 
 Il pourrait être intéressant de proposer un système de sauvegardes au joueur qui conserverait quelques informations sur les parties jouées. Idéalement, il faudrait conserver :
@@ -40,3 +43,47 @@ Il pourrait être intéressant de proposer un système de sauvegardes au joueur 
 - Le nombre de tours joués avant de se tromper
 
 Ces informations seront conservées dans un fichier au format de votre choix. Vous pouvez utiliser le format python, JSON ou CSV, à vous de choisir celui qui vous convient le mieux. Sachez cependant que dans la suite de votre formation ce seront plutôt les formats JSON (API et fichiers de configuration) ou CSV (data analyse) qui seront utilisés. Si vous choisissez le format CSV, utilisez la librairie Pandas.
+
+
+# Simon type game application for object oriented python terminal
+
+It is an application developed as part of my position as a trainer in programming and more specifically for the development of a python learning program. The goal is for learners to produce a functional object-oriented application in the terminal that simulates the famous Simon games. The only difference is that instead of displaying colors, here the game displays numbers.
+
+Through this exercise, they learn to:
+- Organize an application in modules
+- Respect the logic of the MVC pattern
+- Declare and instantiate classes
+- Declare and use attributes
+- Declare and use methods
+- Make objects interact with each other
+- Use the basics of the Pandas bookstore (Go further)
+
+## Instructions
+
+You are a developer in a company that makes toys. Your company wants to create the toy that will be requested by all children at Christmas. The engineers had an idea, they want to create a family board game whose concept is: at regular intervals the game displays a random color among a set of defined colors, the player must then press the color that is is displayed. If he has good the game starts again adding a second color, then a third etc ... This as long as no player is wrong in the sequence to reproduce.
+
+Rest assured, you will not have to developer the physical version of the game but your direction has asked you to develop a POC (proof of concept) to see if an electronic program could simulate the desired game. The only difference will be that you will display numbers since your terminal is in black and white and only one player will be expected.
+
+Functional Specifications :
+- The game asks the name of the player
+- The game requires a level of difficulty (easy, medium or difficult)
+- The game generates and displays on the screen a random sequence of numbers that grows by a new number each turn of games
+- The user must indicate all the numbers of the sequence via a series of inputs
+- If the player is wrong in a number, the game stops
+- The player may choose to replay a new game when he or she has made a mistake
+- The level of difficulty chosen impacts the game as follows:
+  - easy: numbers between 1 and 10, interval between two numbers of 3 seconds
+  - average: numbers between 1 and 20, interval between two numbers of 2 seconds
+  - difficult: numbers between 1 and 100, interval between two numbers of 1 seconds
+
+Technical specifications :
+- Make the most of object-oriented programming
+
+## For further
+
+It might be interesting to propose a system of backups to the player who would keep some information on the games played. Ideally, we should keep:
+- The name of the player
+- The chosen difficulty
+- The number of laps played before being wrong
+
+This information will be kept in a file in the format of your choice. You can use python, JSON or CSV format, it's up to you to choose the one that suits you best. However, know that in the rest of your training it will be rather the formats JSON (API and configuration files) or CSV (data analysis) will be used. If you choose the CSV format, use the Pandas library.
